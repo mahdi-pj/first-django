@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div>
+        {% for board in boards %}
+            <a href="{% url 'board_topics' board.pk %}">{{ board.name }}<br></a>
+        {% endfor %}
+    </div>
+</body>
+</html>

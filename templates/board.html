@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>family</title>
+</head>
+<body>
+    <div>
+        <li style="background-color: #ffefef"><h1><a href="{% url 'board' %}">family</a></h1></li>
+        <h2><a href="{% url 'new_topics'  board.pk %}">new</a> </h2>
+       <h3> {{ board.name }}<br>
+        {{ board.description }}</h3>
+
+    </div>
+
+
+</body>
+</html>

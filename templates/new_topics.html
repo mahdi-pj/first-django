@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" >
+    {% csrf_token %}
+    <div><h2><a href="{%  url 'board_topics' board.pk %}">back</a></h2></div>
+    <div>
+        <label for="id_subjet">subject</label>
+        <input type="text" id="id_subjet" name="subject">
+    </div>
+    <div>
+        <label for="id_message">message</label>
+        <textarea id="id_message" name="message" rows="5">message</textarea>
+    </div>
+    <button type="submit">post</button>
+</form>
+
+</body>
+</html>
